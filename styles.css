@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #73ea73;
+    text-decoration: none;
+    text-shadow: 0px 2px 3px #5b5a5acd;
+}
+
+a:hover {
+    color: rgb(34, 156, 237);
+}
+
+a:active {
+    color: rgb(240, 70, 70); /* Muda enquanto clica */
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(209, 207, 207);
+}
+
+header{
+    height: 100px;
+    background-image: linear-gradient(to right, white, rgb(34, 156, 237));
+}
+
+.nav-links{
+    text-align: right;
+    align-items: center;
+    margin-top: -50px;
+    margin-right: 20px;
+    font-size: 18px;   
+}
+
+.login-signup a{
+    text-shadow: 0px 2px 3px #5b5a5acd;
+}
+
+.menu{
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    background-image: linear-gradient(to right, white, rgb(34, 156, 237));
+}
+
+.login-signup{
+    float: right;
+    height: 80px;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+main{
+    background-color: rgb(209, 207, 207);
+    text-align: center;
+    opacity: 0.5;
+}
+
+h2{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(96, 187, 247);
+    text-shadow: 0px 0px 5px rgb(117, 116, 116);
+}
+
+div.items{
+    display: grid;
+    width: 1000px;
+    height: 250px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.item-1, .item-2{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    cursor: pointer;
+}
+
+.item-1:hover, .item-2:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p{
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: #73ea73;
+    text-shadow: 0px 0px 5px rgb(181, 180, 180);
+    font-weight: 600;
+}
+
+.planos{
+    display: grid;
+    width: 800px;
+    height: 300px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.plano-1, .plano-2, .plano-3, .plano-4{
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.plano-1:hover, .plano-2:hover, .plano-3:hover, .plano-4:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.final{
+    height: 100px;
+    background-image: linear-gradient(to right, white, rgb(34, 156, 237));
+
+}
+.final{
+    height: 100px;
+    background-image: linear-gradient(to right, white, rgb(34, 156, 237));
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* separa contato e ícones */
+    padding: 0 40px;  
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 30px; /* espaço entre os ícones */
+}
+
+.fa-phone, .fa-instagram, .fa-facebook{
+    font-size: 50px;
+    color: #73ea73;
+    text-shadow: 0px 0px 5px rgb(181, 180, 180);
+}
+.fa-phone:hover, .fa-instagram:hover, .fa-facebook:hover{
+    color: rgb(6, 29, 207);
+    transform: scale(1.2);
+    transition: transform 0.3s, color 0.3s;
+}
+/* ================================
+   RESPONSIVIDADE (TABLETS)
+   ================================ */
+@media (max-width: 992px) {
+
+    .nav-links {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    div.items {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .planos {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .item-1, .item-2, .plano-1, .plano-2, .plano-3, .plano-4{
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .final {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .social {
+        gap: 20px;
+    }
+
+    .fa-phone, .fa-instagram, .fa-facebook {
+        font-size: 40px;
+    }
+}
+
+
+/* ================================
+   RESPONSIVIDADE (CELULARES)
+   ================================ */
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .menu {
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    div.items {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .planos {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .item-1, .item-2, .plano-1, .plano-2, .plano-3, .plano-4 {
+        width: 100%;
+    }
+
+    .final {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .social {
+        gap: 15px;
+    }
+
+    .fa-phone, .fa-instagram, .fa-facebook {
+        font-size: 35px;
+    }
+}
